@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+    to bottom,
+    #607ad8d2,
+    #8f8db86d,
+    #a16277a0,
+    #9c5969c3
+  );
+}
+
+.section {
+  min-height: 100vh;
+}
+
+/* nav bar styling */
+header {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+nav {
+  border-radius: 20px;
+  background-color: rgba(123, 123, 235, 0.21);
+  backdrop-filter: blur(10px);
+  min-width: 30%;
+  padding: 0;
+  margin: 10px;
+  position: fixed;
+  top: 10px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0px;
+  margin: 10px;
+}
+
+li {
+  margin: 10px;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+}
+.nav-btn:hover {
+  border-radius: 5px;
+  background-color: rgba(224, 210, 210, 0.393);
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(244, 241, 241, 0.868);
+}
+
+/* home page styling */
+#home {
+  /* padding-top: 5%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wel-div {
+  margin: 20px;
+  padding: 20px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.btn-style {
+  padding: 7px;
+  margin: 10px;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: #152974da;
+  cursor: pointer;
+}
+
+#wel-pic {
+  margin: 20px;
+  padding: 20px;
+}
+
+#my-picture {
+  border-radius: 10px;
+  /* max-height: 250px; */
+  max-width: 250px;
+}
+
+/* about me styling */
+#about-me {
+  padding-top: 7%;
+  background-image: url(images/beige-desk.jpg);
+}
+
+#about-me-container {
+  background-color: rgba(255, 252, 252, 0.612);
+  /* width: 100%; */
+  padding: 2% 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#about-me-text {
+  display: flex;
+}
+
+.text {
+  background-color: rgb(255, 252, 252);
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+/* project-styling */
+#projects {
+  padding: 7%;
+}
+#projects-container {
+  padding: 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+#my-projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-card {
+  margin: 10px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.project-img {
+  background-color: #96576ca0;
+  min-width: 100px;
+  min-height: 100px;
+}
