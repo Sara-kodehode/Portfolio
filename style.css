@@ -5,7 +5,19 @@
   scroll-behavior: smooth;
 }
 
+h3 {
+  padding: 10px;
+  margin: 5px;
+}
+h4 {
+  padding: 5px;
+  margin: 5px;
+}
 body {
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center;
+  align-items: center; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,10 +29,30 @@ body {
     #a16277a0,
     #9c5969c3
   );
+  /* roboto font  */
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712; */
 }
 
 .section {
   min-height: 100vh;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
 }
 
 /* nav bar styling */
@@ -39,6 +71,8 @@ nav {
   margin: 10px;
   position: fixed;
   top: 10px;
+  box-shadow: 0 0 10px rgb(41, 39, 39);
+  z-index: 1;
 }
 
 ul {
@@ -53,64 +87,98 @@ li {
   margin: 10px;
 }
 
-.nav-btn {
+li a {
+  text-decoration: none;
   border: none;
   background-color: transparent;
   padding: 5px;
   cursor: pointer;
   transition: box-shadow 0.5s ease;
+  color: #282938;
+  font-weight: 500;
 }
-.nav-btn:hover {
+
+li a:hover,
+li a.active,
+.section.activ {
   border-radius: 5px;
   background-color: rgba(224, 210, 210, 0.393);
   padding: 5px;
+  /* box-shadow: 0 0 5px rgba(244, 241, 241, 0.687); */
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.769); */
   box-shadow: 0 0 5px rgba(244, 241, 241, 0.868);
+  color: #282938;
+  font-weight: 600;
 }
 
 /* home page styling */
 #home {
   /* padding-top: 5%; */
+  padding: 0 10%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 #wel-div {
-  margin: 20px;
-  padding: 20px;
-  min-height: 150px;
+  /* margin: 20px; */
+  padding: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  gap: 5px;
-  text-align: center;
+
+  /* min-width: 400px; */
+  /* min-height: 150px; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+  /* gap: 5px; */
+  /* text-align: center; */
+}
+
+svg {
+  min-width: 500px;
 }
 
 .btn-style {
-  padding: 7px;
-  margin: 10px;
+  padding: 14px;
+  font-size: 16px;
+  margin: 3px;
   border-radius: 5px;
   color: whitesmoke;
   background-color: #152974da;
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-style {
+  /* box-shadow: 0 4px 8px 0 rgba(13, 13, 13, 0.578); */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.769);
 }
 
 #wel-pic {
-  margin: 20px;
-  padding: 20px;
+  /* margin: px; */
+  /* padding: 20px; */
 }
 
 #my-picture {
   border-radius: 10px;
   /* max-height: 250px; */
   max-width: 250px;
+  box-shadow: 0 0 10px rgb(41, 39, 39);
 }
 
 /* about me styling */
 #about-me {
-  padding-top: 7%;
+  padding-top: 6%;
   background-image: url(images/beige-desk.jpg);
+  background-size: cover;
+
+  /* background-position: center; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;  */
 }
 
 #about-me-container {
@@ -121,7 +189,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
 }
 #about-me-text {
   display: flex;
@@ -134,14 +202,17 @@ li {
   padding: 20px;
   border-radius: 20px;
   margin: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.769);
 }
-
+#icons-div {
+  margin: 5px;
+}
 /* project-styling */
 #projects {
-  padding: 7%;
+  padding-top: 6%;
 }
 #projects-container {
-  padding: 3%;
+  /* padding: 3%; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -165,4 +236,129 @@ li {
   background-color: #96576ca0;
   min-width: 100px;
   min-height: 100px;
+}
+
+/* form styling  */
+#contact {
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#contact-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+#contact-social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20x;
+  margin: 20px;
+}
+.contact-div a {
+  display: flex;
+  align-items: center;
+}
+
+#contact-img {
+  max-width: 150px;
+  padding: 20px;
+}
+
+#contact-form {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  min-width: 400px;
+  padding: 10px;
+  border: 10px;
+  /* margin: auto; */
+  border-radius: 15px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgb(41, 39, 39);
+  box-sizing: border-box;
+}
+
+label {
+  margin: 0 10px 5px 10px;
+  color: rgb(3, 3, 41);
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 0 5px 10px 5px;
+  border: 1px solid rgb(3, 3, 41);
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 786px) {
+  #home {
+    /* padding-top: 5%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+    top: 0;
+    position: fixed;
+  }
+
+  .section {
+    margin-top: 0px;
+  }
+  #about-me-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-me {
+    padding-top: 15%;
+    background-image: url(images/beige-desk.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #about-me-container {
+    background-color: rgba(255, 252, 252, 0.612);
+    padding: 2% 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #projects {
+    padding-top: 15%;
+  }
+
+  #projects-container {
+    padding: 2% 6%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+  }
+  #contact {
+    padding: 15%;
+  }
+
+  #contact-container {
+    padding: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
