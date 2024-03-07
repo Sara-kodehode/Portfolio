@@ -1,43 +1,54 @@
 // animated text home page
 var vara = new Vara(
   "#animated-text",
-  "./fonts/Parisienne/Parisienne.json",
+  "./fonts/Satisfy/SatisfySL.json",
   [
     {
-      text: "Hello ",
+      text: "Hello, My name is",
       textAlign: "center",
-      strokeWidth: 1.5,
-      y: 80,
+      strokeWidth: 0.9,
+      y: 60,
       duration: 200,
     },
-    {
-      text: "My name is",
-      color: "black",
-      textAlign: "center",
-      strokeWidth: 1.5,
-      y: 5,
-      x: 0,
-      duration: 300,
-    },
+    // {
+    //   text: "My name is",
+    //   color: "black",
+    //   textAlign: "center",
+    //   strokeWidth: 1.5,
+    //   y: 5,
+    //   x: 0,
+    //   duration: 300,
+    // },
     {
       text: "Sarah Hussein",
       width: 500,
       color: "black",
       textAlign: "center",
-      strokeWidth: 2,
+      strokeWidth: 1.3,
       y: 10,
       x: 0,
       duration: 200,
     },
     {
-      text: "I work on bringing ideas to life by designing user friendly website",
+      text: "A Front-End Web Developer",
+      width: 500,
+      color: "black",
+      textAlign: "center",
+      strokeWidth: 1.5,
+      y: 10,
+      x: 0,
+      duration: 200,
+    },
+    {
+      text: "Passionate about bringing ideas to life by designing user friendly website",
       strokeWidth: 1,
       textAlign: "center",
       color: "black",
-      width: 400,
+      width: 500,
+
       y: 20,
       x: 0,
-      duration: 2000,
+      duration: 1500,
     },
   ],
   {
@@ -60,8 +71,13 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", changeLinkState);
 });
 
-//  preview the btn cv in empty tab
+//  preview CV btn in empty tab
 const cvBtn = document.getElementById("cv-btn");
 cvBtn.addEventListener("click", function () {
   window.open("Sarah-Hussein.docx.pdf", "_blank");
+});
+
+// refresh to the top of the page
+window.addEventListener("load", function () {
+  window.scrollTo(0, 0);
 });
