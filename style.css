@@ -313,6 +313,10 @@ svg {
   display: flex;
   align-items: center;
 }
+#contact-img-container {
+  display: flex;
+  align-items: center;
+}
 
 #contact-img {
   max-width: 150px;
