@@ -48,6 +48,7 @@ body {
 }
 
 h3 {
+  text-align: center;
   font-family: Satisfy;
   font-size: x-large;
   padding: 10px;
@@ -116,7 +117,7 @@ li a {
   cursor: pointer;
   transition: box-shadow 0.5s ease;
   color: rgb(41, 8, 41);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 li a:hover,
@@ -129,7 +130,7 @@ li a.active,
   /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.769); */
   box-shadow: 0 0 5px rgb(255, 255, 255);
   color: rgb(41, 8, 41);
-  font-weight: 400;
+  font-weight: 700;
 }
 
 /* home page styling */
@@ -221,29 +222,31 @@ svg {
   max-width: fit-content;
   max-height: fit-content;
   text-align: left;
-  padding: 30px;
-  line-height: 18px;
+  padding: 20px;
+  line-height: 21px;
   /* word-spacing: 1px; */
   color: white;
   /* border-radius: 15px; */
   /* margin: 20px; */
   /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.769); */
   /* border: 1px solid white; */
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 250;
   border-right: 0.5px solid white;
 }
 .text h4 {
   color: rgb(41, 8, 41);
-  padding: 5px;
+  /* color: rgb(81, 51, 6); */
+  padding: 10px 0 10px 0;
 }
 span {
   color: rgb(41, 8, 41);
+  /* color: rgb(81, 51, 6); */
   font-weight: 550;
 }
 
 #skills-icons {
-  margin: 5px;
+  margin: 5px 0;
 }
 /* project-styling */
 #projects {
@@ -263,15 +266,6 @@ span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-#fixed-img {
-  z-index: -1;
-  position: absolute;
-  width: 350px;
-  bottom: 0px;
-  right: 0px;
-  width: 40%;
-  max-height: auto;
 }
 
 .project-card {
@@ -351,6 +345,14 @@ span {
   justify-content: space-between;
   align-items: space-between;
 }
+
+#contact p {
+  max-width: 600px;
+  font-family: "Satisfy";
+  font-weight: 300;
+  text-align: center;
+  font-size: 16;
+}
 #contact-social-media {
   display: flex;
   flex-direction: column;
@@ -358,9 +360,30 @@ span {
   padding: 20x;
   margin: 20px;
 }
-.contact-div a {
+.contact-div {
   display: flex;
   align-items: center;
+  gap: 5px;
+}
+.contact-div a {
+  text-decoration: none;
+  position: relative;
+  color: rgb(41, 8, 41);
+}
+
+.contact-div a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1.5px;
+  background-color: rgb(41, 8, 41);
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.contact-div a:hover::before {
+  width: 100%;
 }
 #contact-img-container {
   display: flex;
@@ -370,6 +393,15 @@ span {
 #contact-img {
   max-width: 150px;
   padding: 20px;
+}
+#fixed-img {
+  z-index: -1;
+  position: absolute;
+  width: 350px;
+  bottom: 0px;
+  right: 0px;
+  min-width: 40%;
+  max-height: auto;
 }
 
 @media only screen and (max-width: 786px) {
