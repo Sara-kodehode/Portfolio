@@ -1,41 +1,21 @@
-// animated text home page
-const welDiv = document.getElementById("wel-div");
-const WelText = document.createElement("p");
-WelText.textContent =
-  "Interessert i å bringe ideer til livet ved å designe brukervennlige nettsider";
-WelText.style.padding = "20px";
-WelText.style.maxWidth = "400px";
-WelText.style.fontFamily = "Satisfy";
-WelText.style.fontSize = "26px";
+// text in home page
 
-// WelText.classList.add("wel-text");
-
-var vara = new Vara(
+// library vara.js to animate text in home page
+let vara = new Vara(
   "#animated-text",
   "./fonts/Satisfy/SatisfySL.json",
   [
     {
       text: "Hei, Mitt navn er",
-      // color: "white",
       color: "black",
       textAlign: "center",
       strokeWidth: 1,
       y: 60,
       duration: 200,
     },
-    // {
-    //   text: "My name is",
-    //   color: "black",
-    //   textAlign: "center",
-    //   strokeWidth: 1.5,
-    //   y: 5,
-    //   x: 0,
-    //   duration: 500,
-    // },
     {
       text: "Sarah Hussein",
       width: 500,
-      // color: "white",
       color: "rgb(41, 8, 41)",
       textAlign: "center",
       strokeWidth: 1.7,
@@ -44,8 +24,7 @@ var vara = new Vara(
     },
     {
       text: "En front-end webutvikler",
-      width: 500,
-      // color: "white",
+      width: 600,
       color: " rgb(41, 8, 41)",
       textAlign: "center",
       strokeWidth: 2,
@@ -53,23 +32,22 @@ var vara = new Vara(
       x: 0,
       duration: 1000,
     },
-    // {
-    //   text: "Interessert i å bringe ideer til livet ved å designe brukervennlige nettsider",
-    //   strokeWidth: 1,
-    //   textAlign: "center",
-    //   color: "black",
-    //   width: 500,
-
-    //   y: 20,
-    //   x: 0,
-    //   duration: 1500,
-    // },
   ],
   {
     fontSize: 36,
   }
 );
-welDiv.append(WelText);
+// adding fixed text under animated text in home-page
+
+const homeDiv = document.getElementById("home-div");
+const fixedText = document.createElement("p");
+fixedText.textContent =
+  "Interessert i å bringe ideer til livet ved å designe brukervennlige nettsider";
+fixedText.style.padding = "20px";
+fixedText.style.maxWidth = "400px";
+fixedText.style.fontFamily = "Satisfy";
+fixedText.style.fontSize = "26px";
+homeDiv.append(fixedText);
 
 // nav bar activ section link
 document.addEventListener("DOMContentLoaded", function () {
@@ -94,13 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", changeLinkState);
 });
 
-//  preview CV btn in empty tab
-const cvBtn = document.getElementById("cv-btn");
-cvBtn.addEventListener("click", function () {
-  window.open("Sarah-Hussein.docx.pdf", "_blank");
-});
-
-// refresh to the top of the page
+// refresh protfolio when loading to the top of the page
 window.addEventListener("load", function () {
   window.scrollTo(0, 0);
 });
