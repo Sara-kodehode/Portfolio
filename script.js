@@ -1,12 +1,25 @@
 // animated text home page
+const welDiv = document.getElementById("wel-div");
+const WelText = document.createElement("p");
+WelText.textContent =
+  "Interessert i å bringe ideer til livet ved å designe brukervennlige nettsider";
+WelText.style.padding = "20px";
+WelText.style.maxWidth = "400px";
+WelText.style.fontFamily = "Satisfy";
+WelText.style.fontSize = "26px";
+
+// WelText.classList.add("wel-text");
+
 var vara = new Vara(
   "#animated-text",
   "./fonts/Satisfy/SatisfySL.json",
   [
     {
-      text: "Hello, My name is",
+      text: "Hei, Mitt navn er",
+      // color: "white",
+      color: "black",
       textAlign: "center",
-      strokeWidth: 0.9,
+      strokeWidth: 1,
       y: 60,
       duration: 200,
     },
@@ -17,44 +30,46 @@ var vara = new Vara(
     //   strokeWidth: 1.5,
     //   y: 5,
     //   x: 0,
-    //   duration: 300,
+    //   duration: 500,
     // },
     {
       text: "Sarah Hussein",
       width: 500,
-      color: "black",
+      // color: "white",
+      color: "rgb(41, 8, 41)",
       textAlign: "center",
-      strokeWidth: 1.3,
-      y: 10,
+      strokeWidth: 1.7,
       x: 0,
-      duration: 200,
+      duration: 700,
     },
     {
-      text: "A Front-End Web Developer",
+      text: "En front-end webutvikler",
       width: 500,
-      color: "black",
+      // color: "white",
+      color: " rgb(41, 8, 41)",
       textAlign: "center",
-      strokeWidth: 1.5,
-      y: 10,
+      strokeWidth: 2,
+      y: 15,
       x: 0,
-      duration: 200,
+      duration: 1000,
     },
-    {
-      text: "Passionate about bringing ideas to life by designing user friendly website",
-      strokeWidth: 1,
-      textAlign: "center",
-      color: "black",
-      width: 500,
+    // {
+    //   text: "Interessert i å bringe ideer til livet ved å designe brukervennlige nettsider",
+    //   strokeWidth: 1,
+    //   textAlign: "center",
+    //   color: "black",
+    //   width: 500,
 
-      y: 20,
-      x: 0,
-      duration: 1500,
-    },
+    //   y: 20,
+    //   x: 0,
+    //   duration: 1500,
+    // },
   ],
   {
     fontSize: 36,
   }
 );
+welDiv.append(WelText);
 
 // nav bar activ section link
 document.addEventListener("DOMContentLoaded", function () {
@@ -62,11 +77,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".link");
 
   function changeLinkState() {
-    let index = sections.length;
-    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+    let index = 0;
+    const scrollPosition = window.scrollY + 50;
+
+    for (let i = 0; i < sections.length; i++) {
+      if (scrollPosition >= sections[i].offsetTop) {
+        index = i;
+      }
+    }
+
     navLinks.forEach((link) => link.classList.remove("active"));
     navLinks[index].classList.add("active");
   }
+
   changeLinkState();
   window.addEventListener("scroll", changeLinkState);
 });

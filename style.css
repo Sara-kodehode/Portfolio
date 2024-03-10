@@ -6,8 +6,11 @@
 }
 
 h3 {
+  font-family: Satisfy;
+  font-size: x-large;
   padding: 10px;
   margin: 5px;
+  color: rgb(41, 8, 41);
 }
 h4 {
   padding: 5px;
@@ -64,7 +67,7 @@ header {
 
 nav {
   border-radius: 20px;
-  background-color: rgba(68, 68, 234, 0.21);
+  background-color: rgba(46, 12, 53, 0.279);
   backdrop-filter: blur(30px);
   min-width: 30%;
   padding: 0;
@@ -94,8 +97,8 @@ li a {
   padding: 5px;
   cursor: pointer;
   transition: box-shadow 0.5s ease;
-  color: #06081f;
-  font-weight: 700;
+  color: rgb(41, 8, 41);
+  font-weight: 400;
 }
 
 li a:hover,
@@ -107,8 +110,8 @@ li a.active,
   /* box-shadow: 0 0 5px rgba(244, 241, 241, 0.687); */
   /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.769); */
   box-shadow: 0 0 5px rgba(244, 241, 241, 0.868);
-  color: #06081f;
-  font-weight: 600;
+  color: rgb(41, 8, 41);
+  font-weight: 400;
 }
 
 /* home page styling */
@@ -121,11 +124,20 @@ li a.active,
 }
 
 #wel-div {
+  padding: 50px;
+  min-width: 400px;
+  min-height: 400px;
+  background-image: url(home/Daco_519324.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: visible;
   /* margin: 20px; */
   /* padding: 25px; */
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   /* min-width: 400px; */
   /* min-height: 150px; */
@@ -135,6 +147,10 @@ li a.active,
   align-items: center; */
   /* gap: 5px; */
   /* text-align: center; */
+}
+.wel-text {
+  font-size: 60;
+  font-weight: 500;
 }
 
 svg {
@@ -149,7 +165,7 @@ svg {
   margin: 3px;
   border-radius: 5px;
   color: whitesmoke;
-  background-color: #0b124d;
+  background-image: linear-gradient(to bottom, rgb(37, 5, 37), rgb(30, 5, 30));
   cursor: pointer;
   transition: box-shadow 0.3s ease;
   margin: 5px;
@@ -176,8 +192,8 @@ svg {
 /* about me styling */
 #about-me {
   padding-top: 6%;
-  background-image: url(images/beige-desk.jpg);
-  background-size: cover;
+  /* background-image: url(images/beige-desk.jpg); */
+  /* background-size: cover; */
 
   /* background-position: center; */
   /* display: flex;
@@ -186,9 +202,9 @@ svg {
 }
 
 #about-me-container {
-  background-color: rgba(255, 252, 252, 0.612);
+  background-color: rgba(84, 48, 8, 0.251);
   /* width: 100%; */
-  padding: 2% 7%;
+  padding: 2% 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,16 +213,32 @@ svg {
 }
 #about-me-text {
   display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#full-text {
+  /* background-color: rgb(255, 252, 252); */
+  width: 100%;
+  padding: 50px;
 }
 
 .text {
-  background-color: rgb(255, 252, 252);
+  display: flex;
+  background-color: rgba(52, 27, 90, 0.315);
+  /* background-image: linear-gradient(
+    to right,
+    rgba(41, 7, 41, 0.454),
+    rgb(61, 29, 61)
+  ); */
   max-width: 300px;
-  text-align: center;
+  text-align: left;
   padding: 20px;
+  color: white;
   border-radius: 20px;
   margin: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.769);
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.769); */
+  border: 1px solid white;
 }
 #icons-div {
   margin: 5px;
@@ -228,6 +260,15 @@ svg {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+#fixed-img {
+  z-index: -1;
+  position: absolute;
+  width: 350px;
+  bottom: 0px;
+  right: 0px;
+  width: 40%;
+  max-height: auto;
 }
 
 .project-card {
@@ -255,7 +296,8 @@ svg {
   right: 320px;
   position: absolute;
   /* background: rgba(224, 210, 210, 0.393); */
-  background: rgba(68, 68, 234, 0.21);
+  /* background: rgba(68, 68, 234, 0.413); */
+  background-color: rgba(62, 12, 72, 0.594);
   backdrop-filter: blur(30px);
   border-radius: 15px;
   color: #fff;
@@ -285,6 +327,10 @@ svg {
   font-size: 16px;
   line-height: 35px;
   font-weight: 300;
+}
+.project-links {
+  display: flex;
+  align-items: center;
 }
 
 /* contact styling  */
@@ -350,13 +396,13 @@ svg {
 
   #about-me {
     padding-top: 15%;
-    background-image: url(images/beige-desk.jpg);
+    /* background-image: url(images/beige-desk.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
   }
 
   #about-me-container {
-    background-color: rgba(255, 252, 252, 0.612);
+    background-color: rgba(84, 48, 8, 0.251);
     padding: 2% 7%;
     display: flex;
     justify-content: center;

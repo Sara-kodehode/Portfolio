@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -9,6 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
       rel="stylesheet"
     />
     <script
@@ -22,33 +29,23 @@
       <nav>
         <ul>
           <li>
-            <a href="#home" class="link">Home</a>
+            <a href="#home" class="link">Hjem</a>
           </li>
           <li>
-            <a href="#about-me" class="link">About-me</a>
+            <a href="#about-me" class="link">Om meg </a>
           </li>
           <li>
-            <a href="#projects" class="link">Projects</a>
+            <a href="#projects" class="link">Prosjekter</a>
           </li>
           <li>
-            <a href="#contact" class="link">Contact</a>
+            <a href="#contact" class="link">Kontakt</a>
           </li>
         </ul>
       </nav>
     </header>
     <section class="section" id="home">
       <div id="wel-div">
-        <div id="animated-text">
-          <!-- <h1 class="animate__animated animate__fadeIn animate animate__infinite">
-          An animated element
-        </h1> -->
-          <!-- <h4 id="animated-word">Hello</h4>
-        <h3>My name is Sarah Hussein</h3>
-        <p>
-          I work on bringing ideas to life by designing user friendly website
-        </p> -->
-        </div>
-        <!-- <a href="#contact"><button class="btn-style">Contact</button></a> -->
+        <div id="animated-text"></div>
       </div>
       <div id="wel-pic">
         <img
@@ -64,6 +61,44 @@
           <h3>Welcome to my portfolio</h3>
         </div>
         <div id="about-me-text">
+          <!-- <div id="full-text">
+            <p>
+              Jeg er en aktiv og ambisiøs person som ønsker å jobbe som
+              frontend-utvikler. Jeg har gjennomført front-end kurs nylig og jeg
+              er interessert i å lage og designe et brukervennlig og funksjonelt
+              effektivt grensesnitt. Jeg har lært å designe med Figma og utvikle
+              nettsider ved hjelp av HTML, CSS, JavaScript og React. Jeg ble
+              kjent med hele prosessen fra idédugnad til lansering av nettsiden.
+            </p>
+            <div id="icons-div">
+              <img src="images/icons8-figma.gif" alt="" />
+              <img src="images/icons8-html.gif" alt="" />
+              <img src="images/css4.gif" alt="" />
+              <img src="images/icons8-javascript.gif" alt="" />
+              <img src="images/icons8-react (1).gif" alt="" />
+              <br />
+            </div>
+            <p>
+              Jeg har bachelor i informatikk fra Egypt, og jeg har
+              arbeidserfaring som matematikk- og IKT-lærer.
+            </p>
+            <p>
+              Jeg var også veldig aktiv som frivillig i en samfunnsutvikling
+              organisasjon.
+            </p>
+            <br />
+            <p>
+              Jeg er en hardtarbeidende, aktiv og dedikert person. Jeg liker å
+              være sosial og samarbeidsvillig for å bli en del av et nettverk og
+              integrere meg i samfunnet.
+            </p>
+            <p>
+              In my free time I like to read books and listen to music. I also
+              enjoy watching football matches with my husband and playing board
+              games with my children. Recently i have started searching in web
+              design so that i can get inspiration.
+            </p>
+          </div> -->
           <!-- Experince div -->
           <div class="text">
             <h4>Previous experience</h4>
@@ -90,11 +125,14 @@
               brainstorming to launching the website.
             </p>
             <div id="icons-div">
-              <img src="images/icons8-figma.gif" alt="" />
-              <img src="images/icons8-html.gif" alt="" />
-              <img src="images/css4.gif" alt="" />
-              <img src="images/icons8-javascript.gif" alt="" />
-              <img src="images/icons8-react (1).gif" alt="" />
+              <img src="images/icons8-figma-48.png" alt="" />
+              <img src="images/icons8-html-48.png" alt="" />
+              <img src="images/icons8-css-48 (1).png" alt="" />
+              <img src="images/icons8-javascript-48.png" alt="" />
+              <img
+                src="images/icons8-react-a-javascript-library-for-building-user-interfaces-48.png"
+                alt=""
+              />
             </div>
           </div>
           <!-- About me div -->
@@ -118,7 +156,7 @@
     <!-- projects section -->
     <section class="section" id="projects">
       <div id="my-projects-container">
-        <h3>Projects</h3>
+        <h3>My Projects</h3>
         <div id="projects-container">
           <!-- project 1 -->
           <div class="project-card">
@@ -133,11 +171,16 @@
               <p class="project-info">
                 consectetur adipiscing elit. Suspendisse varius enim in eros.
               </p>
-              <a
-                href="https://kodehode-stavanger.github.io/user-data-assignment-Sara-kodehode/"
-                target="_blank"
-                ><button class="btn-style">Link</button></a
-              >
+              <div class="project-links">
+                <a
+                  href="https://kodehode-stavanger.github.io/user-data-assignment-Sara-kodehode/"
+                  target="_blank"
+                  ><button class="btn-style">Link</button></a
+                >
+                <a href="" target="_blank"
+                  ><img src="images/icons8-github-48.png" alt=""
+                /></a>
+              </div>
             </div>
           </div>
           <!-- project 2 -->
@@ -153,11 +196,16 @@
               <p class="project-info">
                 consectetur adipiscing elit. Suspendisse varius enim in eros.
               </p>
-              <a
-                href="https://kodehode-stavanger.github.io/javascript-advanced-assignment-1-Sara-kodehode/"
-                target="_blank"
-                ><button class="btn-style">Link</button></a
-              >
+              <div class="project-links">
+                <a
+                  href="https://kodehode-stavanger.github.io/javascript-advanced-assignment-1-Sara-kodehode/"
+                  target="_blank"
+                  ><button class="btn-style">Link</button></a
+                >
+                <a href="" target="_blank"
+                  ><img src="images/icons8-github-48.png" alt=""
+                /></a>
+              </div>
             </div>
           </div>
           <!-- project 3 -->
@@ -169,11 +217,16 @@
               <p class="project-info">
                 consectetur adipiscing elit. Suspendisse varius enim in eros.
               </p>
-              <a
-                href="https://kodehode-stavanger.github.io/javascript-advanced-project-api-Sara-kodehode/"
-                target="_blank"
-                ><button class="btn-style">Link</button></a
-              >
+              <div class="project-links">
+                <a
+                  href="https://kodehode-stavanger.github.io/javascript-advanced-project-api-Sara-kodehode/"
+                  target="_blank"
+                  ><button class="btn-style">Link</button></a
+                >
+                <a href="" target="_blank"
+                  ><img src="images/icons8-github-48.png" alt=""
+                /></a>
+              </div>
             </div>
           </div>
           <!-- project 4 -->
@@ -185,13 +238,19 @@
               <p class="project-info">
                 consectetur adipiscing elit. Suspendisse varius enim in eros.
               </p>
-              <a
-                href="https://bendik-kodehode.github.io/Venus-project/"
-                target="_blank"
-                ><button class="btn-style">Link</button></a
-              >
+              <div class="project-links">
+                <a
+                  href="https://bendik-kodehode.github.io/Venus-project/"
+                  target="_blank"
+                  ><button class="btn-style">Live</button></a
+                >
+                <a href="" target="_blank"
+                  ><img src="images/icons8-github-48.png" alt=""
+                /></a>
+              </div>
             </div>
           </div>
+
           <!-- project 5 -->
           <div class="project-card">
             <img
@@ -205,7 +264,12 @@
               <p class="project-info">
                 consectetur adipiscing elit. Suspendisse varius enim in eros.
               </p>
-              <button class="btn-style">Link</button>
+              <div class="project-links">
+                <button class="btn-style">Link</button>
+                <a href="" target="_blank"
+                  ><img src="images/icons8-github-48.png" alt=""
+                /></a>
+              </div>
             </div>
           </div>
           <!-- project 6 -->
@@ -217,11 +281,16 @@
               <p class="project-info">
                 consectetur adipiscing elit. Suspendisse varius enim in eros.
               </p>
-              <a
-                href="https://kodehode-stavanger.github.io/javascript-advanced-project-drum-machine-Sara-kodehode/"
-                target="_blank"
-                ><button class="btn-style">Link</button></a
-              >
+              <div class="project-links">
+                <a
+                  href="https://kodehode-stavanger.github.io/javascript-advanced-project-drum-machine-Sara-kodehode/"
+                  target="_blank"
+                  ><button class="btn-style">Link</button></a
+                >
+                <a href="" target="_blank"
+                  ><img src="images/icons8-github-48.png" alt=""
+                /></a>
+              </div>
             </div>
           </div>
           <!-- the last project  -->
@@ -231,6 +300,7 @@
     <section class="section" id="contact">
       <h3>Contact</h3>
       <p>If you have any question, please contact me</p>
+      <img src="home/Daco_519324 - Copy.png" id="fixed-img" alt="" />
       <div id="contact-container">
         <div id="contact-social-media">
           <div class="contact-div">
