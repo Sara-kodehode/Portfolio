@@ -301,7 +301,7 @@ span {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   transition: 0.5s;
 }
 
