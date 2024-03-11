@@ -310,19 +310,21 @@ span {
 }
 
 .project-title {
-  text-transform: capitalize;
+  padding: 5px;
   font-size: 18px;
   font-weight: 500;
 }
 
 .project-sub-title {
-  text-transform: capitalize;
+  padding: 5px;
   font-size: 14px;
   font-weight: 300;
 }
-.project-description {
-  font-size: 16px;
-  line-height: 35px;
+.project-info {
+  max-width: 220px;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 300;
 }
 .project-links {
