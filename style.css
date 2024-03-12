@@ -7,10 +7,6 @@
 }
 
 body {
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: center;
-  align-items: center; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -69,12 +65,11 @@ h4 {
   background-image: linear-gradient(to bottom, rgb(37, 5, 37), rgb(30, 5, 30));
   cursor: pointer;
   transition: box-shadow 0.3s ease;
-  margin: 5px;
+  margin: 20px;
 }
 
 .btn-style :hover {
   box-shadow: 0 4px 8px 0 rgba(13, 13, 13, 0.578);
-  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.769); */
 }
 
 /* nav-bar styling */
@@ -126,8 +121,6 @@ li a.active,
   border-radius: 5px;
   background-color: rgba(224, 210, 210, 0.393);
   padding: 5px;
-  /* box-shadow: 0 0 5px rgba(244, 241, 241, 0.687); */
-  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.769); */
   box-shadow: 0 0 5px rgb(255, 255, 255);
   color: rgb(41, 8, 41);
   font-weight: 700;
@@ -136,10 +129,11 @@ li a.active,
 /* home page styling */
 #home {
   /* padding-top: 5%; */
-  padding: 0 10%;
+  /* padding: 0 10%; */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 60px;
 }
 
 #home-div {
@@ -150,21 +144,11 @@ li a.active,
   background-size: contain;
   background-repeat: no-repeat;
   overflow: visible;
-  /* margin: 20px; */
-  /* padding: 25px; */
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* min-width: 400px; */
-  /* min-height: 150px; */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; */
-  /* gap: 5px; */
-  /* text-align: center; */
 }
 
 svg {
@@ -173,7 +157,7 @@ svg {
 }
 
 #home-pic {
-  padding: 80px 0 60px 0;
+  padding: 80px 40px 60px 40px;
 }
 
 #my-picture {
@@ -185,25 +169,22 @@ svg {
 
 /* about me styling */
 #about-me {
-  padding-top: 6%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;  */
+  padding-top: 3%;
 }
 
 #about-me-container {
-  min-height: 55vh;
-  /* width: 100%; */
+  min-height: 70vh;
   padding: 2% 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  /* gap: 20px; */
 }
+
 #about-me-fulltext-container {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   overflow: hidden;
   background-color: rgba(52, 27, 90, 0.315);
   padding: 20px 0 20px 0;
@@ -213,36 +194,44 @@ svg {
 .text {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  max-height: fit-content;
+  text-align: left;
+  padding: 20px;
+  line-height: 21px;
+  color: rgb(41, 8, 41);
+  font-size: 18px;
+  font-weight: 450;
+  border-right: 0.5px solid rgb(241, 236, 236);
+}
 
-  /* background-image: linear-gradient(
-    to right,
-    rgba(41, 7, 41, 0.454),
-    rgb(61, 29, 61)
-  ); */
-  max-width: fit-content;
+.last-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
   max-height: fit-content;
   text-align: left;
   padding: 20px;
   line-height: 21px;
   /* word-spacing: 1px; */
-  color: white;
-  /* border-radius: 15px; */
-  /* margin: 20px; */
-  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.769); */
-  /* border: 1px solid white; */
-  font-size: 16px;
-  font-weight: 250;
-  border-right: 0.5px solid white;
-}
-.text h4 {
   color: rgb(41, 8, 41);
-  /* color: rgb(81, 51, 6); */
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.last-text h4 {
+  color: rgb(241, 236, 236);
+  padding: 10px 0 10px 0;
+}
+
+.text h4 {
+  color: rgb(241, 236, 236);
   padding: 10px 0 10px 0;
 }
 span {
-  color: rgb(41, 8, 41);
-  /* color: rgb(81, 51, 6); */
-  font-weight: 550;
+  color: rgb(241, 236, 236);
+  font-size: 18px;
+  font-weight: 350;
 }
 
 #skills-icons {
@@ -292,13 +281,11 @@ span {
   top: 0px;
   right: 320px;
   position: absolute;
-  /* background: rgba(224, 210, 210, 0.393); */
-  /* background: rgba(68, 68, 234, 0.413); */
   background-color: rgba(62, 12, 72, 0.594);
   backdrop-filter: blur(30px);
   border-radius: 15px;
   color: #fff;
-  padding: 30px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -339,6 +326,7 @@ span {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  max-height: fit-content;
 }
 
 #contact-container {
@@ -350,8 +338,8 @@ span {
 
 #contact p {
   max-width: 600px;
-  font-family: "Satisfy";
-  font-weight: 300;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
   text-align: center;
   font-size: 16;
 }
@@ -399,10 +387,9 @@ span {
 #fixed-img {
   z-index: -1;
   position: absolute;
-  width: 350px;
-  bottom: 0px;
+  bottom: 15%;
   right: 0px;
-  min-width: 40%;
+  max-width: 40%;
   max-height: auto;
 }
 
@@ -413,6 +400,7 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: fit-content;
   }
 
   nav {
@@ -423,6 +411,9 @@ span {
   svg {
     padding-top: 50px;
   }
+  #about-me {
+    min-height: fit-content;
+  }
 
   #about-me-text {
     display: flex;
@@ -431,23 +422,48 @@ span {
 
   #about-me {
     padding-top: 15%;
-    /* background-image: url(images/beige-desk.jpg);
-    background-size: cover;
-    background-position: center; */
   }
 
   #about-me-fulltext-container {
-    /* background-color: rgba(84, 48, 8, 0.251); */
-    padding: 2% 7%;
+    padding: 0 40px 20px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    max-height: fit-content;
+    text-align: left;
+    padding: 20px 0;
+    line-height: 21px;
+    color: rgb(41, 8, 41);
+    font-size: 18px;
+    font-weight: 550;
+    border-right: none;
+    border-bottom: 0.5px solid rgb(241, 236, 236);
+    width: 85%;
+  }
+
+  .last-text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    width: 85%;
+    max-width: fit-content;
+    max-height: fit-content;
+    text-align: left;
+    line-height: 21px;
+    color: rgb(41, 8, 41);
+    font-size: 18px;
+    font-weight: 550;
   }
 
   #projects {
-    padding-top: 15%;
+    padding-top: 22%;
   }
 
   #projects-container {
@@ -458,7 +474,8 @@ span {
     gap: 10px;
   }
   #contact {
-    padding: 15%;
+    padding: 22%;
+    max-height: fit-content;
   }
 
   #contact-container {
@@ -467,5 +484,12 @@ span {
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+  #fixed-img {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    min-width: 60%;
   }
 }
