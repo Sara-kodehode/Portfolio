@@ -140,7 +140,7 @@ li a.active,
   padding: 50px;
   min-width: 400px;
   min-height: 400px;
-  background-image: url(home/Daco_519324.png);
+  background-image: url(images/home-page/bk2.png);
   background-size: contain;
   background-repeat: no-repeat;
   overflow: visible;
@@ -442,7 +442,7 @@ span {
     line-height: 21px;
     color: rgb(41, 8, 41);
     font-size: 18px;
-    font-weight: 550;
+    font-weight: 450;
     border-right: none;
     border-bottom: 0.5px solid rgb(241, 236, 236);
     width: 85%;
@@ -459,7 +459,7 @@ span {
     line-height: 21px;
     color: rgb(41, 8, 41);
     font-size: 18px;
-    font-weight: 550;
+    font-weight: 450;
   }
 
   #projects {
