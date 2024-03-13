@@ -285,7 +285,7 @@ span {
   backdrop-filter: blur(30px);
   border-radius: 15px;
   color: #fff;
-  padding: 20px 30px;
+  padding: 10px 30px;
   display: flex;
   flex-direction: column;
   justify-content: start;
