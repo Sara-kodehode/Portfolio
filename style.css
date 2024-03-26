@@ -337,11 +337,14 @@ span {
 }
 
 #contact p {
-  max-width: 600px;
-  font-family: "Roboto Flex", sans-serif;
-  font-weight: 500;
+  min-width: 380px;
+
+  /* font-family: "Roboto Flex", sans-serif; */
+  font-weight: 540;
   text-align: center;
   font-size: 16;
+  color: rgb(41, 8, 41);
+  line-height: 20px;
 }
 #contact-social-media {
   display: flex;
