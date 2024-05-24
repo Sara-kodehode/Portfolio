@@ -23,7 +23,7 @@ let vara = new Vara(
       duration: 700,
     },
     {
-      text: "En front-end webutvikler",
+      text: "En front-end webutvikler, UI/UX Designer og Tester ",
       width: 600,
       color: " rgb(41, 8, 41)",
       textAlign: "center",
